@@ -6,7 +6,8 @@
     scroll-behavior: smooth;
 }
 img{
-    width:100%
+    width:100%;
+    height: 100%;
 }
 video {
     width: 100%;
@@ -32,6 +33,7 @@ video {
     text-decoration: none;
     color: white;
 }
+/* top navigation bar*/
 .header__items a {
    text-decoration: none;
 }
@@ -41,24 +43,37 @@ video {
     list-style: none;
     gap: 1rem;
 }
-/* DESCRIPTION BOX SECTION */
+/* MAIN SECTION */
+.main-section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    position: relative;
+
+}
 .description-box {
     background-color: #35382e;
     color: white;
     width: 70vw;
-    max-width: 500px;
+    max-width: 550px;
     justify-self: center;
     padding: 2rem;
     border-radius: 3px;
     display: grid;
     gap: 0.8rem;  
+    margin-right: 100px;
+    z-index: 30;
 
 }
-.main-section {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    align-items: center;
+.blob {
+    background-color:#ede6e2 ;
+    width: 600px;
+    height: 200px;
+    border-radius: 30% 40% 25% 70% / 50% 50% 70% 80%;
+    position: absolute;
+    top: -3rem;
+    right: 10rem;
 }
+
 
 .description-box__title {
     color:#f7ca01;
@@ -95,6 +110,18 @@ video {
     gap: 0.5rem;
     border-radius: 5px;
 }
+.projects__list__hoxton-gazzete {
+    position: relative;
+}
+.new {
+    background-color: royalblue;
+    position: absolute;
+    top: -0.5rem;
+    right: -0.4rem;
+    color: white;
+    padding: 0.2rem 0.5rem;
+    border-radius: 2px;
+}
 .project-item a {
     background-color: #ef6245;
     color: white;
@@ -112,7 +139,11 @@ video {
 .project-item p {
     padding: 0rem 0.5rem;
 }
-.hoxton-media{
+.project-item img {
+    object-fit: cover;
+    object-position: top;
+}
+.hoxton-media {
     background: radial-gradient(#e66465, #9198e5);
     padding-top: 6px;
     padding-left: 6px;
