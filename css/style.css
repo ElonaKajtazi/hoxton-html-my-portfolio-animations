@@ -9,12 +9,15 @@ img{
     width:100%;
     height: 100%;
 }
-video {
-    width: 100%;
+:root {
+--main: #9E7B9B;
+--boxes: #22223B;
+--experience-background:#5998C5;
+--projects-background: 
 }
 /* TOP SECTION */
 .top {
-    background-color: #f46b50;
+    background-color: var(--main);
     height: 70vh;
     padding: 1rem;
     display: grid;
@@ -24,7 +27,7 @@ video {
 .top header {
     display: grid;
     grid-template-columns: 1fr auto;
-    background-color: #35382e;
+    background-color: var(--boxes);
     align-items: center;
     padding: 0.5rem 1rem;
     border-radius: 3px;
@@ -43,6 +46,17 @@ video {
     list-style: none;
     gap: 1rem;
 }
+.header-item:hover {
+    background-color:white;
+    border: 2px solid white;
+    padding: 0.3rem;
+    color: var(--boxes);
+    border-radius: 2px;
+}
+.header-item:active {
+    background-color: var(--main);
+    color: #5998C5;
+}
 /* MAIN SECTION */
 .main-section {
     display: grid;
@@ -51,7 +65,7 @@ video {
 
 }
 .description-box {
-    background-color: #35382e;
+    background-color: var(--boxes);
     color: white;
     width: 70vw;
     max-width: 550px;
@@ -116,14 +130,14 @@ video {
 .new {
     background-color: royalblue;
     position: absolute;
-    top: -0.5rem;
-    right: -0.4rem;
+    top: -1.1rem;
+    right: -0.2rem;
     color: white;
     padding: 0.2rem 0.5rem;
     border-radius: 2px;
 }
 .project-item a {
-    background-color: #ef6245;
+    background-color: var(--main);
     color: white;
     text-decoration: none;
     text-align: center;
@@ -134,7 +148,7 @@ video {
 }
 .project-item h3 {
     padding: 0rem 0.5rem;
-    color: #ef6245;
+    color: var(--main)
 }
 .project-item p {
     padding: 0rem 0.5rem;
@@ -151,7 +165,7 @@ video {
 }
 /*EXPERIENCE SECTION */
 .experience {
-    background-color: #5bc3eb;
+    background-color: var(--experience-background);
     padding: 1rem;
     display: grid;
     gap: 1rem;
@@ -181,7 +195,7 @@ video {
 }
 /* FOOTER SECTION */
 footer {
-    background-color: #35382e;
+    background-color: var(--boxes);
     padding: 0.5rem;
     text-align: center;
 }
@@ -189,4 +203,14 @@ footer a {
     text-decoration: none;
     color: white;
 
+}
+footer a:hover {
+    background-color:white;
+    border: 2px solid white;
+    padding: 0.344rem;
+    color: var(--boxes);
+    border-radius: 2px;
+}
+footer a:active {
+    background-color: var(--main);
 }
