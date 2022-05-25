@@ -35,6 +35,11 @@ img{
 .top header  a {
     text-decoration: none;
     color: white;
+
+    transition: color 250ms;
+}
+.top header a:hover {
+    color: antiquewhite;
 }
 /* top navigation bar*/
 .header__items a {
@@ -76,8 +81,9 @@ img{
     gap: 0.8rem;  
     margin-right: 100px;
     z-index: 30;
-
+      
 }
+
 .blob {
     background-color:#ede6e2 ;
     width: 600px;
@@ -123,7 +129,17 @@ img{
     display: grid;
     gap: 0.5rem;
     border-radius: 5px;
+    width: 350px;
+    box-shadow: 0 0 0 0 var(--main);
+
+    transition: transform 400ms box-shadow 400ms;
 }
+.project-item:hover {
+   transform: scale(1.02);
+   box-shadow: 0 0 5px 0 var(--main);
+
+}
+
 .projects__list__hoxton-gazzete {
     position: relative;
 }
@@ -144,7 +160,12 @@ img{
     padding: 0.5rem 0;
     border-radius: 3px;
     margin: 0.5rem;
+
+    transition: text-decoration 300ms;
     
+}
+.project-item a:hover{
+    text-decoration: underline;
 }
 .project-item h3 {
     padding: 0rem 0.5rem;
@@ -183,6 +204,12 @@ img{
     width: 800px;
     justify-self: center;
     border-radius: 3px;
+
+    transition: width 400ms;
+}
+.experience-item:hover {
+    width: 820px;
+
 }
 .experience-list {
     display: grid;
